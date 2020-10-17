@@ -9,7 +9,6 @@ io.on('connection', function (socket) {
 
     socket.on('send message', function (body) {
         io.emit('message', body);
-        socket.off('send message');
     });
 });
 
